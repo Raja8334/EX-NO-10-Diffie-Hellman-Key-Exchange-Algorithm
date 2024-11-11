@@ -25,14 +25,15 @@ To Implement Diffie Hellman Key Exchange Algorithm
 // Function to calculate power (a^b % P)  
 long long int power(long long int a, long long int b, long long int P) {     
 if (b == 1)         
-return a;     else  
-return ((long long int)pow(a, b) % P);  
+  return a;
+else  
+   return ((long long int)pow(a, b) % P);  
 }  
 int main() {  
 long long int P, G, x, a, y, b, ka, kb;  
 // Both the users will be agreed upon the public keys P and G     
-P = 23; // A prime number P is taken     printf("The value of P: 
-%lld\n", P);  
+P = 23; // A prime number P is taken
+ printf("The value of P: %lld\n", P);  
 G = 9; // A primitive root for P, G is taken     
 printf("The value of G: %lld\n\n", G);  
 // Alice will choose the private key a     a = 4; // a is 
